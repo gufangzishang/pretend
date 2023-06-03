@@ -9,18 +9,35 @@
             margin: 0;
         }
 
-        h1{
+        div{
+
           text-align: center;
+          line-height: 100vh;
+          width: 100vw;
+          height: 100vh;
+          background: #ede310;
         }
 
     </style>
 </head>
 <body>
 
-    <h1>pretend</h1>
-    <h1>pretend</h1>
+<div id="div">
+a
+</div>
 <script>
 
+  // 首先是获取到元素
+  let main = document.getElementById('div');
+  // 第一种方式
+  let mainWidth = main.offsetWidth,
+          mainHeight = main.offsetHeight;
+
+
+  main.innerText = mainWidth+"=="+mainHeight
+  // // 第二种方式
+  // var mainWidth2 = main.style.width,
+  //         mainHeight2 = main.style.height;
 </script>
 </body>
 </html>
